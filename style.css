@@ -1,0 +1,387 @@
+body{
+	margin:0px;
+	background-color:#55e3f8;
+	position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+p {
+	vertical-align: top;
+}
+ul {
+	background-color: rgb(255, 255, 255, .8);
+	font-family: "Times New Roman";
+	font-size: 20pt;
+}
+div.top_panel{
+	position:static;
+	background-color:#79d9e7;
+	background-image: radial-gradient(#fff 10%, transparent 10%),
+	radial-gradient(#fff 10%, transparent 10%);
+	background-size: 30px 30px;
+	background-position: 0 0, 15px 15px;
+	border-top: 4px dashed #046ca3;
+	border-bottom: 4px dashed #046ca3;
+}
+img.top_panel{
+	display:block;
+	margin: 0% auto;
+	max-width:4%;
+	-webkit-animation: rotation 5s infinite linear;
+	animation: rotation 5s infinite linear;
+}
+div.left_panel{
+	border: 4px black solid;
+	padding: 3px;
+	display:inline-block;
+	background-image: url("./images/div_bg.jpg");
+	background-repeat: repeat;
+	width:15%;
+	height:73%;
+	vertical-align:top;
+	overflow: auto;
+}
+div.div_header {
+	background-image: url("./images/div_bg.jpg");
+	background-repeat: repeat;
+	vertical-align:top;
+	overflow: auto;
+	text-align: center;
+}
+div.middle_panel{
+	display:inline-block;
+	background-color:blue;
+	width:69%;
+}
+img.middle_panel {
+	max-width:100%;
+}
+div.right_panel{
+	border: 4px black solid;
+	padding: 3px;
+	display:inline-block;
+	position: absolute;
+	background-image: url("./images/div_bg.jpg");
+	background-repeat: repeat;
+	width:15%;
+	height:73%;
+	vertical-align:top;
+	overflow: auto;
+}
+div.bottom_panel {
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 20%;
+	border: 3px black solid;
+	background-image: url("./images/gsu_banner.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+img.bottom_panel {
+
+}
+/*div.bottom_panel{
+	max-height:14%;
+	display:block;
+	background-color:white;
+	overflow:none;
+}
+*/
+/*img.bottom_panel{
+	width:8%;
+	float:right;
+	margin-right:2%;	
+}
+*/
+span.header {
+	font-family: Times;
+	font-size: 34pt;
+	text-align: center;
+}
+p.information {
+	background-color: rgb(255, 255, 255, .8);
+	font-family: "Times New Roman";
+	font-size: 14pt;
+}
+/*Animations and Stuff*/
+@keyframes rotation {
+	from{transform: rotateY(0deg);}
+	to{transform: rotateY(359deg);}
+}
+@-webkit-keyframes rotation {
+	from{-webkit-transform: rotateY(0deg);}
+	to{-webkit-transform: rotateY(359deg);}
+}
+
+.point1{
+	position: absolute;
+	width: 5%;
+	top: 25%;
+	left: 20%;
+	
+}
+.point1,.point2,.point3,.point4,.point5,.point6 {
+	transition: all 1s;
+}
+.point1:hover,.point2:hover,.point3:hover,.point4:hover,.point5:hover,.point6:hover{
+	transform: rotateY(360deg);
+}
+.point2{
+	position: absolute;
+	width: 5%;
+	top: 58%;
+	left: 28%;
+}
+
+.point3{
+	position: absolute;
+	width: 5%;
+	top: 65%;
+	left: 39%;
+}
+
+.point4{
+	position: absolute;
+	width: 5%;
+	top: 45%;
+	left: 33%;
+}
+
+.point5{
+	position: absolute;
+	width: 5%;
+	top: 30%;
+	left: 33%;
+}
+
+.point6{
+	position: absolute;
+	width: 5%;
+	top: 30%;
+	left: 48%;
+}
+
+.tooltip {
+  position: absolute;
+  color: transparent;
+  top: 28%;
+  left: 20%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip2 {
+  position: absolute;
+  color: transparent;
+  top: 61%;
+	left: 28%;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+.tooltip3 {
+  position: absolute;
+  color: transparent;
+ top: 68%;
+	left: 39%;
+}
+
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+}
+
+.tooltip4 {
+  position: absolute;
+  color: transparent;
+ top: 48%;
+	left: 33%;
+}
+
+.tooltip4 .tooltiptext4 {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip4:hover .tooltiptext4 {
+  visibility: visible;
+}
+
+.tooltip5 {
+  position: absolute;
+  color: transparent;
+ top: 33%;
+	left: 33%;
+}
+
+.tooltip5 .tooltiptext5 {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip5:hover .tooltiptext5 {
+  visibility: visible;
+}
+
+.tooltip6 {
+  position: absolute;
+  color: transparent;
+  top: 33%;
+	left: 48%;
+}
+
+.tooltip6 .tooltiptext6 {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip6:hover .tooltiptext6 {
+  visibility: visible;
+}
+/*Pacman movement */
+
+#pacman {
+	position:absolute;
+	max-width:4%;
+	top:33%;
+	left: 20%;
+	z-index: 1;
+	-webkit-animation-name: example;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+  
+  animation-name: example;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@-webkit-keyframes example {
+  0%   {left:20%; top:33%;}
+  10%  {left:33%; top:33%;}
+  20%  {left:33%; top:33%;}
+  30%  {left:50%; top:33%;}
+  40% {left:50%; top:33%;}
+  50%   {left:38%; top:67%;}
+  60%  {left:38%; top:67%;}
+  70%  {left:42%; top:56%;}
+  80%  {left:36%; top:45%;}
+  90% {left:36%; top:45%;}
+  100% {left:28%; top:64%; visibility:hidden;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {left:20%; top:33%;}
+  10%  {left:33%; top:33%;}
+  20%  {left:33%; top:33%;}
+  30%  {left:50%; top:33%;}
+  40% {left:50%; top:33%;}
+  50%   {left:38%; top:67%;}
+  60%  {left:38%; top:67%;}
+  70%  {left:42%; top:56%;}
+  80%  {left:36%; top:45%;}
+  90% {left:36%; top:45%;}
+  100% {left:28%; top:64%; visibility:hidden;}
+}
+#pacman_idle {
+	visibility:hidden;
+	position:absolute;
+	max-width:4%;
+	top:64%;
+	left:28%;
+	animation-name:idle;
+    animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 22s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+}
+@keyframes idle {
+	from{top: 64%; left: 28%;}
+	to{top: 64%; left: 28%; visibility:visible;}
+ }
